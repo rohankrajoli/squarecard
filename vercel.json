@@ -1,6 +1,9 @@
 {
   "version": 2,
   "public": true,
+  "buildCommand": "npm run build",
+  "installCommand": "npm run vercel-install",
+  "outputDirectory": "client/dist",
   "rewrites": [
     { "source": "/(.*)", "destination": "/client/index.html" }
   ]
