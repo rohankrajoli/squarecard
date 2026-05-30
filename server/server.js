@@ -31,7 +31,7 @@ const connectDB = async () => {
   } catch (error) {
     console.error('MongoDB connection error:', error.message)
     console.log('Trying to connect to local MongoDB...')
-    
+
     try {
       await mongoose.connect('mongodb://localhost:27017/square-card-balance')
       console.log('Connected to local MongoDB')
